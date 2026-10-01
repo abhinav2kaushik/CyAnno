@@ -6,3 +6,5 @@ About CyAnno The 'ungated' cells represent the undefined cells after all mutuall
 Instructions 
 Al Instructions and usage manual is same as version 1 and can be found at https://github.com/abbioinfo/CyAnno
 
+Cite:
+Abhinav Kaushik, Diane Dunham, Ziyuan He, Monali Manohar, Manisha Desai, Kari C Nadeau, Sandra Andorf, CyAnno: a semi-automated approach for cell type annotation of mass cytometry datasets, Bioinformatics, Volume 37, Issue 22, November 2021, Pages 4164–4171, https://doi.org/10.1093/bioinformatics/btab409
