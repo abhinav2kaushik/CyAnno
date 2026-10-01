@@ -5,15 +5,12 @@ A tool to predict cell labels of closely related (but mutually exclusive) cell t
 '''
 
 ##### Mandatory ######
-handgatedFileinfo='TrainingDataset_manuallygated.csv' 			## [Mandatory] hand-gated cells to be used for training
-LiveFileinfo= 'TrainingDataset_live.csv'    	## [Mandatory] All Live cells of the samples used for handgating (i.e. training); these samples will also be labelled
-unlabelledDataset= 'TestingDataset_live.csv'    		## [Mandatory] All Live cells to be tested for annotation, i.e. for cell type identification
-relevantMarkers = ['CD19','CD49b','CD4','CD8','CD20','LAG3','CD123','CD3','HLA.DR','CD69',
-                        'CD33','CD11c','CD14','CD127','CCR7','CD25','CD56','TCRgd','CD16',
-                       'CD40L','CD45RA','CD27'] ## [Mandatory] lineage markers used for hand-gated; based on column names in FCS/CSV file  
-outdir = 'POISED' 				## Mandatory when loadModel=False] any name of choice. If directory will hold saved session and labelled CSV file.	
-loadSession = '' 	## [optional; valid only when loadModel=True]  if user wants to reuse the previously built models/training then, put the name of directory having all the session files.
-
+handgatedFileinfo='example/Handgated.csv' 		## [Mandatory] hand-gated cells to be used for training
+LiveFileinfo= 'example/LivecellsTraining.csv'    	## [Mandatory] All Live cells of the samples used for handgating (i.e. training); these samples will also be labelled
+unlabelledDataset= 'example/Livecells.csv'    		## [Mandatory] All Live cells to be tested for annotation, i.e. for cell type identification
+relevantMarkers = ["0","1","2","3","4","5","6","7"] 	## [Mandatory] lineage markers used for hand-gated; based on column names in FCS/CSV file  
+outdir = 'MultCent' 					##  Mandatory when loadModel=False] any name of choice. If directory will hold saved session and labelled CSV file.	
+loadSession = '' 					## [optional; valid only when loadModel=True]  if user wants to reuse the previously built models/training then, put the name of directory having all the session files.
 
 ######### Optional #######
 threads = 20 			## (Int) number of available threads to use; -1 if all available threads are to be used
