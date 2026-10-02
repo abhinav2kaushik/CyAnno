@@ -1,3 +1,4 @@
+## (Version 2 (2026) fixes critical bugs #
 from src.functions import *
 '''
 A tool to predict cell labels of closely related (but mutually exclusive) cell types in large scale CyTOF studies
